@@ -1,0 +1,79 @@
+html{
+  font-family: 'Raleway', sans-serif;
+}
+/* -------------------- ESTILOS PROPIOS -------------------- */
+.testimonials-section{
+  overflow-x: hidden;
+}
+.testimonials{
+  display: flex;
+  width: 200%;
+  transition: transform .3s ease-in-out;
+}
+.testimonials-body{
+  width: 100%;
+}
+.testimonials-text,
+.testimonials-image{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23rem;
+}
+.testimonials-text > img:first-child,
+.testimonials-image > img:first-child{
+  position: absolute;
+  z-index: -1;
+}
+.testimonials-image > img:last-child{
+  max-width: 75%;
+  box-shadow: -10px 50px 37px -30px rgba(0,0,0,0.32);
+}
+.testimonials-text > img:first-child{
+  max-width: 50px;
+  top: -1rem;
+}
+.testimonials-text{
+  flex-direction: column;
+  height: 10rem;
+}
+.testimonials-section input[type="radio"]{
+  display: none;
+}
+#slide-1:checked ~ .testimonials{
+  transform: translateX(0%);
+}
+#slide-2:checked ~ .testimonials{
+  transform: translateX(-50%);
+}
+body > img:last-of-type{
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.attribution{
+  position: fixed;
+  bottom: 0;
+}
+@media screen and (min-width: 48rem){
+  .testimonials-section{
+    height: 80vh;
+  }
+  .testimonials{
+    height: 80%;
+  }
+  .testimonials-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonials-body > .container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .testimonials-image{
+    flex-basis: 90%;
+  }
+}
