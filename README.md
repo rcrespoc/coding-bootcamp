@@ -1,5 +1,7 @@
 # Frontend Mentor - Coding Bootcamp Testimonials Slider
 
+[Revisar sitio web](https://rcrespoc.github.io/coding-bootcamp/)
+
 ![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
